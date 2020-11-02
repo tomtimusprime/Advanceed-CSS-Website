@@ -27,9 +27,6 @@ body {
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-
-    
-
 }
 
 .logo-box {
@@ -59,10 +56,27 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+
+    animation-name: moveInLeft;
+    animation-duration: 5s;
 }
 .heading-primary-sub {
     display: block;
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 21.7px;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0)
+    }
 }
